@@ -1,6 +1,7 @@
 from urllib.request import urlopen
 from urllib.parse import urlencode 
 from lxml import etree  
+import time
 
 term = "???"
 base_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?"
@@ -31,3 +32,4 @@ for i in IDs:
 
     for element in resultelements:
         print(element.text)
+    time.sleep(0.5)
