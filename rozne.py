@@ -32,4 +32,6 @@ for i in IDs:
 
     for element in resultelements:
         print(element.text)
+        
     time.sleep(0.5)
+    print()
